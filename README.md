@@ -32,11 +32,13 @@ Step 2: Configure Tailwind CSS
 
   1.	Install Tailwind CSS:
   If you haven’t already set up Tailwind CSS in your Next.js project, follow these steps:
-  `npm install -D tailwindcss postcss autoprefixer
-  npx tailwindcss init -p`
+
+  `npm install -D tailwindcss postcss autoprefixer`
+  `npx tailwindcss init -p`
   
   2.	Update tailwind.config.js:
   Enable dark mode by adding the darkMode option. This tells Tailwind to look for the dark class on the <html> or <body> element.
+
   `module.exports = {
     darkMode: 'class', // Enable class-based dark mode
     content: [
@@ -51,14 +53,16 @@ Step 2: Configure Tailwind CSS
   
   3.	Add Tailwind Directives to CSS:
   In your global CSS file (e.g., styles/globals.css), add the Tailwind directives:
-  `@tailwind base;
-  @tailwind components;
-  @tailwind utilities;`
+
+  `@tailwind base;`
+  `@tailwind components;`
+  `@tailwind utilities;`
 
 Step 3: Using the Theme Toggle Component
 
   1.	Import the Component:
   Import the DarkToggle component into your Next.js project.
+
   `import DarkToggle from './components/DarkToggle';`
 
   2.	Add the Component to Your Layout:
